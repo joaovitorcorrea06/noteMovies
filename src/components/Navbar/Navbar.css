@@ -1,0 +1,45 @@
+.navbar{
+    background-color: #23232e;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-bar{
+    padding-left: 1vw;
+    height: 100%;
+    width: 120px;
+}
+
+.left-bar a {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.left-bar img{
+    max-width: 100%;
+    height: auto;
+}
+
+.right-bar{
+    padding-right: 1vw;
+    height: 100%;
+    width: 120px;
+}
+
+.right-bar button{
+    background-color: #23232e;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.right-bar button:hover{
+    background-color: #292936;
+}

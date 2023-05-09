@@ -1,0 +1,48 @@
+.left-div{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.left-div h1 {
+        color: #3F4D86;
+        font-size: 76px;
+        font-family: Arial;
+}
+
+.left-div h1 span {
+    color: #E20812;
+}
+
+.left-div h2{
+    font-size: 38px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
+}
+
+.left-div button {
+    background-color: #E20812;
+    color: #fff;
+    height: 70px;
+    width: 300px;
+    border: solid 1px #000;
+    border-radius: 10px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+.left-div #option {
+    width: 60px;
+    margin-left: 5px;
+}
+
+.left-div button:hover {
+    background-color: #B1060F;
+    
+}

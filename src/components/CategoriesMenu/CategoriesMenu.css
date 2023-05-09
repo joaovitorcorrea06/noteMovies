@@ -1,0 +1,29 @@
+.div-menu{
+   display: flex;
+   justify-content: center;
+}
+.categ-menu{
+   text-align: center;
+   width: 95%;
+   
+}
+
+.categ-menu h1{
+   margin: 10px;
+   color: #fff;
+}
+
+.categ-menu h3{
+   color: #D3A23F;
+}
+
+.list-card {
+   width: 100%;
+   border: 2px solid white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+
+
