@@ -19,7 +19,6 @@
 
 .list-card {
    width: 100%;
-   border: 2px solid white;
    display: flex;
    align-items: center;
    justify-content: center;
