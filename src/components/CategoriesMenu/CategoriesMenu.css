@@ -1,6 +1,7 @@
 .div-menu{
    display: flex;
    justify-content: center;
+   margin-top: 20px;
 }
 .categ-menu{
    text-align: center;
@@ -14,7 +15,7 @@
 }
 
 .categ-menu h3{
-   color: #D3A23F;
+   color: #2873E4;
 }
 
 .list-card {

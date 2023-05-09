@@ -16,7 +16,7 @@ const CategoriesMenu = () => {
   return (
     <div className="div-menu">
       <div className="categ-menu">
-        <h1>Categorias</h1>
+        {/* <h1>Categorias</h1> */}
 
         <Slider {...settings}>
           <div className="list-card">
