@@ -5,6 +5,14 @@ import React, { useState } from 'react';
 import Modal from '../ModalSugestoes';
 import FilmeSugestao from '../FilmeSugestao';
 
+import netflix from '../../icons/netflix.png'
+import disneyplus from '../../icons/disneyplus.png'
+import hbomax from '../../icons/hbomax.png'
+import apple from '../../icons/apple.png'
+import paramountplus from '../../icons/paramountplus.png'
+import primevideo from '../../icons/primevideo.png'
+import starplus from '../../icons/starplus.png'
+
 const LeftDiv = () => {
 
   const [isModalSugestaoOpen, setIsModalSugestaoOpen] = useState(false);
@@ -32,25 +40,25 @@ const LeftDiv = () => {
       name: 'Filme 1',
       year: '2022',
       duration: '1h 30m',
-      platforms: ['Netflix', 'Prime Video'],
+      platforms: [netflix, disneyplus],
     },
     {
       poster: 'https://img.elo7.com.br/product/original/268B9A7/big-poster-filme-panico-4-2011-lo02-tamanho-90x60-cm-panico-4.jpg',
       name: 'Filme 2',
       year: '2021',
       duration: '2h 15m',
-      platforms: ['Netflix', 'Disney+'],
+      platforms: [netflix, disneyplus],
     },
     {
       poster: 'https://t.ctcdn.com.br/jmmxr_st8Jg0vbhlUezF8fd_Chs=/1024x0/smart/filters:format(webp)/i663288.jpeg',
       name: 'Filme 3',
       year: '2023',
       duration: '1h 45m',
-      platforms: ['Prime Video', 'HBO Max'],
+      platforms: [primevideo, hbomax],
     },
   ];
 
-  const platformOptions = ['HBO Max', 'Prime Video', 'Netflix', 'Star+', 'Disney+', 'Paramount+', 'Apple+' ];
+  const platformOptions = [hbomax, primevideo, netflix, starplus, disneyplus, paramountplus, apple ];
   const genreOptions = ['Ação', 'Aventura', 'Drama', 'Comédia', 'Ficção', 'Terror', 'Fantasia', 'Documentário','Musical'];
   
 
@@ -78,7 +86,7 @@ const LeftDiv = () => {
                     type="checkbox"
                     value={platform}
                     />
-                    <h5 style={{color: '#fff', marginLeft: 10}}>{platform}</h5>
+                    <img src={platform} style={{ marginLeft: 10}}/>
                 </div>
               ))}
             </div>

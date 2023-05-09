@@ -12,7 +12,7 @@ const FilmeSugestao = ({ poster, name, year, duration, platforms }) => {
       <p style={{color: '#fff'}}>{duration}</p>
       <div className="platforms">
         {platforms.map((platform, index) => (
-          <span key={index} style={{color: '#fff'}}>{platform}</span>
+          <img key={index} src={platform}/>
         ))}
       </div>
     </div>
