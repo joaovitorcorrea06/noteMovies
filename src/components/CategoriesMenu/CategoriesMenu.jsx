@@ -24,22 +24,61 @@ const CategoriesMenu = () => {
             
             <CardGeneroMenu nome={'teste'}/>
             <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
 
           </div>
           <div className="list-card">
             <h3>Ficção</h3>
+
+            <CardGeneroMenu nome={'teste'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
           </div>
           <div className="list-card">
             <h3>Suspense</h3>
+
+            <CardGeneroMenu nome={'teste'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
           </div>
           <div className="list-card">
             <h3>Terror</h3>
+
+            <CardGeneroMenu nome={'teste'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
           </div>
           <div className="list-card">
             <h3>Animação</h3>
+
+            <CardGeneroMenu nome={'teste'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
           </div>
           <div className="list-card">
             <h3>Aventura</h3>
+            
+            <CardGeneroMenu nome={'teste'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
+            <CardGeneroMenu nome={'teste 2'}/>
           </div>
         </Slider>
       </div>

@@ -7,49 +7,99 @@ import FilmeSugestao from '../FilmeSugestao';
 
 const LeftDiv = () => {
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalSugestaoOpen, setIsModalSugestaoOpen] = useState(false);
+  const [isModalFiltroOpen, setIsModalFiltroOpen] = useState(false);
 
-  const openModal = () => {
-    setIsModalOpen(true);
+  const openModalSugestao = () => {
+    setIsModalSugestaoOpen(true);
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
+  const closeModalSugestao = () => {
+    setIsModalSugestaoOpen(false);
+  };
+
+  const openModalFiltro = () => {
+    setIsModalFiltroOpen(true);
+  };
+
+  const closeModalFiltro = () => {
+    setIsModalFiltroOpen(false);
   };
 
   const movies = [
     {
-      poster: 'poster1.jpg',
+      poster: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcfbE7-xbu-9K3mg2GcvQV3iG1fHYKtZgW2A&usqp=CAU',
       name: 'Filme 1',
       year: '2022',
       duration: '1h 30m',
       platforms: ['Netflix', 'Prime Video'],
     },
     {
-      poster: 'poster2.jpg',
+      poster: 'https://img.elo7.com.br/product/original/268B9A7/big-poster-filme-panico-4-2011-lo02-tamanho-90x60-cm-panico-4.jpg',
       name: 'Filme 2',
       year: '2021',
       duration: '2h 15m',
       platforms: ['Netflix', 'Disney+'],
     },
     {
-      poster: 'poster3.jpg',
+      poster: 'https://t.ctcdn.com.br/jmmxr_st8Jg0vbhlUezF8fd_Chs=/1024x0/smart/filters:format(webp)/i663288.jpeg',
       name: 'Filme 3',
       year: '2023',
       duration: '1h 45m',
       platforms: ['Prime Video', 'HBO Max'],
     },
   ];
+
+  const platformOptions = ['HBO Max', 'Prime Video', 'Netflix', 'Star+', 'Disney+', 'Paramount+', 'Apple+' ];
+  const genreOptions = ['Ação', 'Aventura', 'Drama', 'Comédia', 'Ficção', 'Terror', 'Fantasia', 'Documentário','Musical'];
   
 
   return (
     <>
-      <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <h2 style={{color: '#fff'}}>Título do Modal</h2>
+      <Modal isOpen={isModalSugestaoOpen} onClose={closeModalSugestao}>
+        <h2 style={{color: '#fff'}}>Sugestões</h2>
         <div className="movies-container">
           {movies.map((movie, index) => (
             <FilmeSugestao key={index} {...movie} />
           ))}
+        </div>
+      </Modal>
+
+      <Modal isOpen={isModalFiltroOpen} onClose={closeModalFiltro}>
+        <h2 style={{color: '#fff'}}>Filtro</h2>
+        <div className='filtroDiv' style={{marginTop: '5%'}}>
+          <div>
+          <h4 style={{color: '#fff'}}>Plataformas</h4>
+            <div className='plataformSide' style={{display: 'flex', flexWrap: 'wrap'}}>
+              {platformOptions.map((platform) => (
+                <div key={platform} style={{display: 'flex', alignItems: 'center'}}>
+                  <input
+                    className='checkboxFilter'
+                    type="checkbox"
+                    value={platform}
+                    />
+                    <h5 style={{color: '#fff', marginLeft: 10}}>{platform}</h5>
+                </div>
+              ))}
+            </div>
+            </div>
+
+          <div>
+          <h4 style={{color: '#fff'}}>Generos</h4>
+            <div className='genreSide' style={{display: 'flex', flexWrap: 'wrap'}}>
+            {genreOptions.map(genero => (
+               <div key={genero} style={{display: 'flex', alignItems: 'center'}}>
+               <input
+                 className='checkboxFilter'
+                 type="checkbox"
+                 value={genero}
+                 />
+                 <h5 style={{color: '#fff', marginLeft: 10}}>{genero}</h5>
+             </div>
+            ))}
+            </div>
+            </div>
+        
         </div>
       </Modal>
 
@@ -59,8 +109,8 @@ const LeftDiv = () => {
       </h1>
       <h2>Assista mais, Escolha menos.</h2>
       <div>
-        <button onClick={openModal}>Sugestão</button>
-        <button id="option">+</button>
+        <button onClick={openModalSugestao}>Sugestão</button>
+        <button id="option" onClick={openModalFiltro}>+</button>
       </div>
     </div>
     </>

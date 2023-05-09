@@ -3,7 +3,7 @@ import "./CardGeneroMenu.css"
 
 const CardGeneroMenu = ({nome}) => {
   return (
-    <div className='testeCard'>
+    <div className='filmCard'>
       <p className='textCard'>{nome}</p>
     </div>
   )
