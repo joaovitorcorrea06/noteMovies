@@ -1,16 +1,13 @@
+import { BrowserRouter } from 'react-router-dom'
 import "./App.css"
 
-import Navbar from "./components/Navbar/Navbar"
-import SortSection from "./components/SortSection/SortSection"
-import CategoriesMenu from "./components/CategoriesMenu/CategoriesMenu"
+import Routes from './router'
 
 const App = () => {
   return (
-    <div className="main">
-      <Navbar />
-      <SortSection />
-      <CategoriesMenu />
-    </div>
+    <BrowserRouter>
+      <Routes/>
+    </BrowserRouter>
   )
 }
 
