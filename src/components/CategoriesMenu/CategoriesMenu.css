@@ -24,6 +24,12 @@
    align-items: center;
    justify-content: center;
  }
+
+ @media (max-width: 450px) and (max-height: 900px) {
+   .list-card {
+      width: 95% !important;
+    }
+ }
  
 
 
