@@ -22,7 +22,7 @@ const CategoriesMenu = () => {
           <div className="list-card">
             <h3>Ação</h3>
             
-            <CardGeneroMenu nome={'teste'}/>
+            <CardGeneroMenu nome={'teste acao'}/>
             <CardGeneroMenu nome={'teste 2'}/>
             <CardGeneroMenu nome={'teste 2'}/>
             <CardGeneroMenu nome={'teste 2'}/>
